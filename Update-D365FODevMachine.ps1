@@ -35,4 +35,4 @@ Get-D365Model -CustomizableOnly -ExcludeMicrosoftModels -ExcludeBinaryModels | I
 ###############################################################
 Invoke-D365DBSync
 
-Start-D365Environment -Aos -Batch -DMF  # Wishlist - do not start Mgmt Reporter if it is set to Manual startup
+Start-D365Environment -Aos -Batch -DMF  # Do not start Mgmt Reporter for development boxes
