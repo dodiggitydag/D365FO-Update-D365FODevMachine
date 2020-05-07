@@ -1,5 +1,6 @@
 #Install-Module d365fo.tools  # Must be installed
 #Update-Module d365fo.tools
+Import-Module d365fo.tools
 
 Stop-D365Environment
 
@@ -35,4 +36,4 @@ Get-D365Model -CustomizableOnly -ExcludeMicrosoftModels -ExcludeBinaryModels | I
 ###############################################################
 Invoke-D365DBSync
 
-Start-D365Environment -Aos -Batch -DMF  # Do not start Mgmt Reporter for development boxes
+Start-D365Environment -OnlyStartTypeAutomatic  # Do not start Mgmt Reporter for development boxes
