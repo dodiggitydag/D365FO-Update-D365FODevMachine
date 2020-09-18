@@ -34,6 +34,6 @@ Get-D365Model -CustomizableOnly -ExcludeMicrosoftModels -ExcludeBinaryModels | I
 ###############################################################
 # Visually check there are no errors before continuing
 ###############################################################
-Invoke-D365DBSync
+Invoke-D365DbSync -DatabaseServer . -DatabaseName AxDB -ShowOriginalProgress
 
 Start-D365Environment -OnlyStartTypeAutomatic  # Do not start Mgmt Reporter for development boxes
